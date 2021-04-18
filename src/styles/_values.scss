@@ -1,0 +1,28 @@
+@mixin flexCenter($direction)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-wrapper
+{
+    @include flexCenter(column);
+
+    text-align: center;
+
+    h3
+    {
+        font-size: 24px;
+        padding-bottom: 15px;
+        color: rgb(126, 125, 128);
+    }
+
+    p
+    {
+        font-size: 18px;
+        padding-bottom: 5vh;
+        color: rgb(0, 50, 92);
+    }
+}

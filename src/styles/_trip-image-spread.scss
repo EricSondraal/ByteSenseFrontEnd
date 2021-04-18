@@ -1,0 +1,46 @@
+@mixin flexCenter($direction)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip-image-spread
+{
+    @include flexCenter(row);
+
+    
+}
+
+.trip-image
+{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    img
+    {
+        width: 25vw;
+        height: 18.33vw;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .trip-image-spread
+    {
+        flex-direction: column;
+    } 
+
+    .trip-image
+    {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+
+        img
+        {
+            width: 80vw;
+            height: 58.656vw;
+        }
+    }
+}

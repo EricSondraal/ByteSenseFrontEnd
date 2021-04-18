@@ -1,0 +1,113 @@
+.ei-root {
+  display: block;
+  float: left;
+  text-align: center;
+  padding-left: 130px;
+}
+
+.expand-when-viewed-div {
+  display: table-cell;
+  width: 300px;
+  height: 300px;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+.expand-when-viewed-img {
+  width: 120px;
+  height: 120px;
+
+  -webkit-transition: width 2000ms ease, height 2000ms ease;
+  -moz-transition: width 2000ms ease, height 2000ms ease;
+  -o-transition: width 2000ms ease, height 2000ms ease;
+  -ms-transition: width 2000ms ease, height 2000ms ease;
+  transition: width 2000ms ease, height 2000ms ease;
+
+  opacity: 0;
+}
+
+.become-visible {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+
+  -webkit-animation: fadeInFromNone 2000ms ease-out;
+  -moz-animation: fadeInFromNone 2000ms ease-out;
+  -o-animation: fadeInFromNone 2000ms ease-out;
+  animation: fadeInFromNone 2000ms ease-out;
+  opacity: 1;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+    display: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  0% {
+    display: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+#expand-div-1 {
+  left: 600px;
+  position: relative;
+}
