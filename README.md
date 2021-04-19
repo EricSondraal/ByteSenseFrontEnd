@@ -2,6 +2,6 @@
 
 npm init
 
-npm install aos --save
+npm install
 
-npm install --save react-on-screen
+npm start
