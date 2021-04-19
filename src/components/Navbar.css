@@ -88,6 +88,7 @@
     flex-direction: column;
     width: 00%;
     height: 100vh;
+    top: 80px;
     position: absolute;
     left: -80%;
     opacity: 1;
